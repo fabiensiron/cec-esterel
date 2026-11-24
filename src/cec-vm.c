@@ -3,12 +3,6 @@
 #include "balvm-instructions.h"
 
 unsigned char *program;
-unsigned char* threads[MAX_THREADS];
-unsigned char states[MAX_STATES];
-unsigned char joins[MAX_JOINS];
-unsigned char signals[MAX_SIGNALS];
-int stack[MAX_STACK];
-int registers[MAX_REGISTERS];
 unsigned char *testVectors;
 
 char readProgram(char* filename);
@@ -16,7 +10,7 @@ void writeSignals(int tick, FILE * pFile);
 void initializeVars();
 void debugProgram();
 char readTestVectors(char* filename);
-char initializeVarsForTick();
+char initializeVarsForTick(FILE *testFile);
 
 int main(int argc, char* argv[]){
   if(argc < 4){

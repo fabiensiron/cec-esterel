@@ -35,7 +35,7 @@ VM=./cec-vm
 
 DUMPBALVMC="./cec --vm-only"
 
-CCARGS=-Wall
+CCARGS="-Wall -std=gnu99 -Wno-error=implicit-function-declaration -Wno-error=implicit-int"
 
 # Set time limit to 40 seconds on all operations
 # ulimit -t 40

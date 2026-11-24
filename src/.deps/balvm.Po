@@ -1,2 +1,3 @@
-balvm.o: balvm.c /usr/include/stdc-predef.h
-/usr/include/stdc-predef.h:
+balvm.o: balvm.c \
+ /nix/store/cb7d4q7zpd9mhr3mr4a32845cqj8nqdy-glibc-2.42-103-dev/include/stdc-predef.h
+/nix/store/cb7d4q7zpd9mhr3mr4a32845cqj8nqdy-glibc-2.42-103-dev/include/stdc-predef.h:

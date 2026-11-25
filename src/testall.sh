@@ -35,7 +35,8 @@ VM=./cec-vm
 
 DUMPBALVMC="./cec --vm-only"
 
-CCARGS="-Wall -std=gnu99 -Wno-error=implicit-function-declaration -Wno-error=implicit-int"
+# Deactivate optimizations as gcc computed gotos is extremely costly during compilation
+CCARGS="-Wall -std=gnu99 -O0 -Wno-error=implicit-function-declaration -Wno-error=implicit-int"
 
 # Set time limit to 40 seconds on all operations
 # ulimit -t 40
